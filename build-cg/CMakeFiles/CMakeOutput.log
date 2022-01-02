@@ -1,0 +1,348 @@
+The target system is: Generic - 1 - sh
+The host system is: Linux - 5.4.0-74-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/onee/.local/bin/sh-elf-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/onee/.local/bin/sh-elf-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b44a6/fast && /usr/bin/make -f CMakeFiles/cmTC_b44a6.dir/build.make CMakeFiles/cmTC_b44a6.dir/build
+make[1]: Entering directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b44a6.dir/testCCompiler.c.obj
+/home/onee/.local/bin/sh-elf-gcc -DTARGET_FXCG50  -m4-nofpu -mb -ffreestanding -nostdlib -Wa,--dsp -o CMakeFiles/cmTC_b44a6.dir/testCCompiler.c.obj   -c /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_b44a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b44a6.dir/link.txt --verbose=1
+/home/onee/.local/bin/sh-elf-gcc      -nostdlib CMakeFiles/cmTC_b44a6.dir/testCCompiler.c.obj  -o cmTC_b44a6  -lgcc 
+/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/ld: warning: cannot find entry symbol start; defaulting to 0000000000001000
+make[1]: Leaving directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_67d8d/fast && /usr/bin/make -f CMakeFiles/cmTC_67d8d.dir/build.make CMakeFiles/cmTC_67d8d.dir/build
+make[1]: Entering directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj
+/home/onee/.local/bin/sh-elf-gcc -DTARGET_FXCG50  -v -m4-nofpu -mb -ffreestanding -nostdlib -Wa,--dsp -o CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_AS_OPTIONS='--dsp'
+COLLECT_GCC=/home/onee/.local/bin/sh-elf-gcc
+Target: sh3eb-elf
+Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3,m4-nofpu --enable-languages=c,c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 11.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_67d8d.dir/'
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/cc1 -quiet -v -imultilib m4-nofpu -D TARGET_FXCG50 /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_67d8d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m4-nofpu -mb -version -ffreestanding -o /tmp/cc5PgAvw.s
+GNU C17 (GCC) version 11.1.0 (sh3eb-elf)
+	compiled by GNU C version 9.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/sys-include"
+ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed
+End of search list.
+GNU C17 (GCC) version 11.1.0 (sh3eb-elf)
+	compiled by GNU C version 9.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: b40aa2a2c0b8596dc76cf3cb39cd43b1
+COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_67d8d.dir/'
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/as --traditional-format -big --isa=sh4a-nofpu --dsp -o CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj /tmp/cc5PgAvw.s
+COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/
+LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/m4-nofpu/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/
+COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_67d8d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67d8d.dir/link.txt --verbose=1
+/home/onee/.local/bin/sh-elf-gcc     -v -nostdlib CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj  -o cmTC_67d8d  -lgcc 
+Using built-in specs.
+COLLECT_GCC=/home/onee/.local/bin/sh-elf-gcc
+COLLECT_LTO_WRAPPER=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper
+Target: sh3eb-elf
+Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3,m4-nofpu --enable-languages=c,c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 11.1.0 (GCC) 
+COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/
+LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/
+COLLECT_GCC_OPTIONS='-v' '-nostdlib' '-o' 'cmTC_67d8d' '-dumpdir' 'cmTC_67d8d.'
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/collect2 -plugin /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/liblto_plugin.so -plugin-opt=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLwF0G0.res -m shelf -o cmTC_67d8d -L/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0 CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj -lgcc
+/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/ld: warning: cannot find entry symbol start; defaulting to 0000000000001000
+COLLECT_GCC_OPTIONS='-v' '-nostdlib' '-o' 'cmTC_67d8d' '-dumpdir' 'cmTC_67d8d.'
+make[1]: Leaving directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include]
+    add: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+  end of search list found
+  collapse include dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include] ==> [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include]
+  collapse include dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed] ==> [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+  implicit include dirs: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include;/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(sh-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_67d8d/fast && /usr/bin/make -f CMakeFiles/cmTC_67d8d.dir/build.make CMakeFiles/cmTC_67d8d.dir/build]
+  ignore line: [make[1]: Entering directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/onee/.local/bin/sh-elf-gcc -DTARGET_FXCG50  -v -m4-nofpu -mb -ffreestanding -nostdlib -Wa --dsp -o CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_AS_OPTIONS='--dsp']
+  ignore line: [COLLECT_GCC=/home/onee/.local/bin/sh-elf-gcc]
+  ignore line: [Target: sh3eb-elf]
+  ignore line: [Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3 m4-nofpu --enable-languages=c c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_67d8d.dir/']
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/cc1 -quiet -v -imultilib m4-nofpu -D TARGET_FXCG50 /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_67d8d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -m4-nofpu -mb -version -ffreestanding -o /tmp/cc5PgAvw.s]
+  ignore line: [GNU C17 (GCC) version 11.1.0 (sh3eb-elf)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/sys-include"]
+  ignore line: [ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include]
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 11.1.0 (sh3eb-elf)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: b40aa2a2c0b8596dc76cf3cb39cd43b1]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_67d8d.dir/']
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/as --traditional-format -big --isa=sh4a-nofpu --dsp -o CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj /tmp/cc5PgAvw.s]
+  ignore line: [COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/]
+  ignore line: [LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/m4-nofpu/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_67d8d]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67d8d.dir/link.txt --verbose=1]
+  ignore line: [/home/onee/.local/bin/sh-elf-gcc     -v -nostdlib CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj  -o cmTC_67d8d  -lgcc ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/onee/.local/bin/sh-elf-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper]
+  ignore line: [Target: sh3eb-elf]
+  ignore line: [Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3 m4-nofpu --enable-languages=c c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.1.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/]
+  ignore line: [LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-nostdlib' '-o' 'cmTC_67d8d' '-dumpdir' 'cmTC_67d8d.']
+  link line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/collect2 -plugin /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/liblto_plugin.so -plugin-opt=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLwF0G0.res -m shelf -o cmTC_67d8d -L/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0 CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj -lgcc]
+    arg [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccLwF0G0.res] ==> ignore
+    arg [-m] ==> ignore
+    arg [shelf] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_67d8d] ==> ignore
+    arg [-L/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0] ==> dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0]
+    arg [CMakeFiles/cmTC_67d8d.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+  collapse library dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0] ==> [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0]
+  implicit libs: [gcc]
+  implicit dirs: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_82fdd/fast && /usr/bin/make -f CMakeFiles/cmTC_82fdd.dir/build.make CMakeFiles/cmTC_82fdd.dir/build
+make[1]: Entering directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_82fdd.dir/testCXXCompiler.cxx.obj
+/home/onee/.local/bin/sh-elf-g++  -DTARGET_FXCG50  -m4-nofpu -mb -ffreestanding -nostdlib -Wa,--dsp -o CMakeFiles/cmTC_82fdd.dir/testCXXCompiler.cxx.obj -c /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_82fdd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82fdd.dir/link.txt --verbose=1
+/home/onee/.local/bin/sh-elf-g++       -nostdlib CMakeFiles/cmTC_82fdd.dir/testCXXCompiler.cxx.obj  -o cmTC_82fdd  -lgcc 
+/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/ld: warning: cannot find entry symbol start; defaulting to 0000000000001000
+make[1]: Leaving directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_939f1/fast && /usr/bin/make -f CMakeFiles/cmTC_939f1.dir/build.make CMakeFiles/cmTC_939f1.dir/build
+make[1]: Entering directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj
+/home/onee/.local/bin/sh-elf-g++  -DTARGET_FXCG50  -v -m4-nofpu -mb -ffreestanding -nostdlib -Wa,--dsp -o CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_AS_OPTIONS='--dsp'
+COLLECT_GCC=/home/onee/.local/bin/sh-elf-g++
+Target: sh3eb-elf
+Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3,m4-nofpu --enable-languages=c,c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 11.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_939f1.dir/'
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/cc1plus -quiet -v -imultilib m4-nofpu -D TARGET_FXCG50 /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_939f1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m4-nofpu -mb -version -ffreestanding -o /tmp/cciwVb4F.s
+GNU C++17 (GCC) version 11.1.0 (sh3eb-elf)
+	compiled by GNU C version 9.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include/c++/11.1.0"
+ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include/c++/11.1.0/sh3eb-elf/m4-nofpu"
+ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include/c++/11.1.0/backward"
+ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/sys-include"
+ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed
+End of search list.
+GNU C++17 (GCC) version 11.1.0 (sh3eb-elf)
+	compiled by GNU C version 9.3.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 960d3f8cdc25744040caca650c41331e
+COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_939f1.dir/'
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/as --traditional-format -big --isa=sh4a-nofpu --dsp -o CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cciwVb4F.s
+COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/
+LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/m4-nofpu/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/
+COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_939f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_939f1.dir/link.txt --verbose=1
+/home/onee/.local/bin/sh-elf-g++      -v -nostdlib CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_939f1  -lgcc 
+Using built-in specs.
+COLLECT_GCC=/home/onee/.local/bin/sh-elf-g++
+COLLECT_LTO_WRAPPER=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper
+Target: sh3eb-elf
+Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3,m4-nofpu --enable-languages=c,c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 11.1.0 (GCC) 
+COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/
+LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/
+COLLECT_GCC_OPTIONS='-v' '-nostdlib' '-o' 'cmTC_939f1' '-dumpdir' 'cmTC_939f1.'
+ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/collect2 -plugin /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/liblto_plugin.so -plugin-opt=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8g4oX6.res -m shelf -o cmTC_939f1 -L/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0 CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj -lgcc
+/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/ld: warning: cannot find entry symbol start; defaulting to 0000000000001000
+COLLECT_GCC_OPTIONS='-v' '-nostdlib' '-o' 'cmTC_939f1' '-dumpdir' 'cmTC_939f1.'
+make[1]: Leaving directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include]
+    add: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+  end of search list found
+  collapse include dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include] ==> [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include]
+  collapse include dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed] ==> [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+  implicit include dirs: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include;/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(sh-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_939f1/fast && /usr/bin/make -f CMakeFiles/cmTC_939f1.dir/build.make CMakeFiles/cmTC_939f1.dir/build]
+  ignore line: [make[1]: Entering directory '/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/home/onee/.local/bin/sh-elf-g++  -DTARGET_FXCG50  -v -m4-nofpu -mb -ffreestanding -nostdlib -Wa --dsp -o CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_AS_OPTIONS='--dsp']
+  ignore line: [COLLECT_GCC=/home/onee/.local/bin/sh-elf-g++]
+  ignore line: [Target: sh3eb-elf]
+  ignore line: [Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3 m4-nofpu --enable-languages=c c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_939f1.dir/']
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/cc1plus -quiet -v -imultilib m4-nofpu -D TARGET_FXCG50 /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_939f1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -m4-nofpu -mb -version -ffreestanding -o /tmp/cciwVb4F.s]
+  ignore line: [GNU C++17 (GCC) version 11.1.0 (sh3eb-elf)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include/c++/11.1.0"]
+  ignore line: [ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include/c++/11.1.0/sh3eb-elf/m4-nofpu"]
+  ignore line: [ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include/c++/11.1.0/backward"]
+  ignore line: [ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/sys-include"]
+  ignore line: [ignoring nonexistent directory "/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include]
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/include-fixed]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.1.0 (sh3eb-elf)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 960d3f8cdc25744040caca650c41331e]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_939f1.dir/']
+  ignore line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/as --traditional-format -big --isa=sh4a-nofpu --dsp -o CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cciwVb4F.s]
+  ignore line: [COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/]
+  ignore line: [LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/m4-nofpu/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'TARGET_FXCG50' '-v' '-m4-nofpu' '-mb' '-ffreestanding' '-nostdlib' '-o' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_939f1]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_939f1.dir/link.txt --verbose=1]
+  ignore line: [/home/onee/.local/bin/sh-elf-g++      -v -nostdlib CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_939f1  -lgcc ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/onee/.local/bin/sh-elf-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper]
+  ignore line: [Target: sh3eb-elf]
+  ignore line: [Configured with: ../gcc-11.1.0/configure --prefix=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc --target=sh3eb-elf --with-multilib-list=m3 m4-nofpu --enable-languages=c c++ --without-headers --with-newlib --program-prefix=sh-elf- --enable-libssp --enable-lto]
+  ignore line: [Thread model: single]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.1.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/:/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/../../../../sh3eb-elf/bin/]
+  ignore line: [LIBRARY_PATH=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-nostdlib' '-o' 'cmTC_939f1' '-dumpdir' 'cmTC_939f1.']
+  link line: [ /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/collect2 -plugin /home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/liblto_plugin.so -plugin-opt=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8g4oX6.res -m shelf -o cmTC_939f1 -L/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0 CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj -lgcc]
+    arg [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/libexec/gcc/sh3eb-elf/11.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc8g4oX6.res] ==> ignore
+    arg [-m] ==> ignore
+    arg [shelf] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_939f1] ==> ignore
+    arg [-L/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0] ==> dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0]
+    arg [CMakeFiles/cmTC_939f1.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+  collapse library dir [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0] ==> [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0]
+  implicit libs: [gcc]
+  implicit dirs: [/home/onee/.local/share/giteapc/Lephenixnoir/sh-elf-gcc/lib/gcc/sh3eb-elf/11.1.0]
+  implicit fwks: []
+
+

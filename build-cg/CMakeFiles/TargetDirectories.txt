@@ -1,0 +1,3 @@
+/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/rebuild_cache.dir
+/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/edit_cache.dir
+/home/onee/Documents/minesweeper/minesweeper/build-cg/CMakeFiles/myaddin.dir
