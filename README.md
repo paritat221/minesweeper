@@ -11,5 +11,4 @@ OPTN : restart<br>
 MENU : exit game<br>
 
 # status
-The game is on version 1.1, it is fully playable but i'll add a timer and a flag tracker like in the original game in future versions.
-This was not made by a professional, the code is extremely bad.
+This game is on v2.0, its definitive version
