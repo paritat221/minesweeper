@@ -12,6 +12,7 @@ find_package(Gint 2.1 REQUIRED)
 set(SOURCES
   src/main.c
   src/board.c
+  src/timer.c
   # ...
 )
 # Shared assets, fx-9860G-only assets and fx-CG-50-only assets
@@ -32,6 +33,10 @@ set(ASSETS_cg
   assets-cg/bugdenial.png
   assets-cg/red_bomb.png
   assets-cg/cross_bomb.png
+  assets-cg/digits.png
+  assets-cg/alive.png 
+  assets-cg/dead.png
+  assets-cg/minus.png
   # ...
 )
 
