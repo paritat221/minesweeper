@@ -30,6 +30,8 @@ set(ASSETS_cg
   assets-cg/nums.png
   assets-cg/bomb.png
   assets-cg/bugdenial.png
+  assets-cg/red_bomb.png
+  assets-cg/cross_bomb.png
   # ...
 )
 
