@@ -5,10 +5,10 @@ Minesweeper game for casio fx cg-50 calculator
 Plug your fx cg-50 into your pc and drag and drop Minesweeper.g3a
 
 # controls 
-SHIFT : show cell\n
-ALPHA : flag cell\n
-OPTN : restart\n
-MENU : exit game\n 
+SHIFT : show cell<br>
+ALPHA : flag cell<br>
+OPTN : restart<br>
+MENU : exit game<br>
 
 # status
 The game is on version 1.1, it is fully playable but i'll add a timer and a flag tracker like in the original game in future versions.
