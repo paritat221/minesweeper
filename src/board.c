@@ -47,13 +47,10 @@ void gen_board(int a, int b, struct Board *brd){
     for(int i=0; i<brd->nmines; i++){
         int y = rand()%brd->height;
         int x = rand()%brd->width;
-        int limit=0;
         while(brd->board_state[y][x].value==69 || around(a,b,x,y,brd)){
             srand(rtc_ticks());
             y = rand()%brd->height;
             x = rand()%brd->width;
-            limit++;
-            if(limit>1000) break;
         }
         brd->board_state[y][x].value=69;
 
@@ -108,7 +105,7 @@ void draw_cursor(struct Board *brd){
     dimage(brd->pos[0]*20+10,brd->pos[1]*20+10,&img_cursor);
 }
 
-void show_cell(int x,int y, struct Board *brd){
+int show_cell(int x,int y, struct Board *brd){
     int height = brd->height;
     int width = brd->width;
     if (x<width && y<height && x>=0 && y>=0 && brd->board_state[y][x].flagged==0) 
@@ -125,9 +122,10 @@ void show_cell(int x,int y, struct Board *brd){
             }
         }
     }
+    return 0;
 }
 
-void reveal(int x, int y, struct Board *brd){
+int reveal(int x, int y, struct Board *brd){
     int height = brd->height;
     int width = brd->width;
     int flags = 0;
@@ -143,8 +141,11 @@ void reveal(int x, int y, struct Board *brd){
         for(int v=y-1;v<=y+1;v++){
             for(int z=x-1;z<=x+1;z++){
                 if(z<width && v<height && z>=0 && v>=0){
-                    if(brd->board_state[v][z].flagged==0)
+                    if(brd->board_state[v][z].flagged==0){
                         brd->board_state[v][z].state=1;
+                        if(brd->board_state[v][z].value==69)
+                            return 1;
+                    }
                 }
             }
         }
@@ -157,6 +158,7 @@ void reveal(int x, int y, struct Board *brd){
             }
         }
     }
+    return 0;
 }
 
 void flag_cell(int x,int y, struct Board *brd){
@@ -166,3 +168,47 @@ void flag_cell(int x,int y, struct Board *brd){
         brd->board_state[y][x].flagged=!brd->board_state[y][x].flagged;
 }
 
+
+void lose(int a, int b, struct Board *brd){
+    extern bopti_image_t img_nums;
+    extern bopti_image_t img_bomb;
+    extern bopti_image_t img_desert_cell;
+    extern bopti_image_t img_flag;
+    extern bopti_image_t img_red_bomb;
+    extern bopti_image_t img_cross_bomb;
+    int height = brd->height;
+    int width = brd->width;
+
+    for(int y=0; y<height; y++){
+        for(int x=0; x<width;x++){
+            
+                if(brd->board_state[y][x].state){
+                    int value = brd->board_state[y][x].value;
+                    if(value==69){
+                        dsubimage(x*20+10,y*20+10,&img_bomb,0,0,20,20, DIMAGE_NONE);
+                    }else if(value==0){
+                        dsubimage(x*20+10,y*20+10,&img_nums,160,0,180+20,20, DIMAGE_NONE);
+                    }
+                    else{
+                        if(x*20<width*20)
+                            dsubimage(x*20+10,y*20+10,&img_nums,(value-1)*20,0,value*20+20,20, DIMAGE_NONE);
+                    }
+                }else{
+                    if(brd->board_state[y][x].flagged==1){
+                        if(brd->board_state[y][x].value==69)
+                            dsubimage(x*20+10,y*20+10,&img_flag,0,0,20,20, DIMAGE_NONE);
+                        else
+                            dsubimage(x*20+10,y*20+10,&img_cross_bomb,0,0,20,20, DIMAGE_NONE);
+                    }else if(brd->board_state[y][x].value==69){
+                        dsubimage(x*20+10,y*20+10,&img_bomb,0,0,20,20, DIMAGE_NONE);
+                    }
+                    else{
+                        dsubimage(x*20+10,y*20+10,&img_desert_cell,0,0,20,20,DIMAGE_NONE);
+                    }
+                }
+                if(brd->board_state[y][x].flagged==1)
+                    dsubimage(x*20+10,y*20+10,&img_flag,0,0,20,20, DIMAGE_NONE);
+        }
+    }
+    dsubimage(a*20+10,b*20+10,&img_red_bomb,0,0,20,20, DIMAGE_NONE);
+}

@@ -30,10 +30,11 @@ struct Board{
 void gen_board(int, int, struct Board*);
 void draw_board(struct Board*);
 void draw_cursor(struct Board*);
-void show_cell(int ,int, struct Board*);
+int show_cell(int ,int, struct Board*);
 void flag_cell(int ,int, struct Board*);
-void reveal(int ,int, struct Board*);
+int reveal(int ,int, struct Board*);
 void set_board(struct Board*);
+void lose(int, int, struct Board*);
 int around(int, int, int, int, struct Board*);
 
 #endif
