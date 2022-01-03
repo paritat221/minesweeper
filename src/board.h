@@ -1,14 +1,6 @@
 #ifndef _PRINCEOFMYNES_BOARD_H
 #define _PRINCEOFMYNES_BOARD_H
 
-#define MINE 1
-#define ENGINE_TICK 25
-#define DIR_UP 1
-#define DIR_DOWN 2
-#define DIR_RIGHT 3
-#define DIR_LEFT 4
-#define DIR_IDLE 0
-
 #include <gint/display.h>
 #include <gint/timer.h>
 #include <gint/clock.h>
@@ -35,6 +27,8 @@ void flag_cell(int ,int, struct Board*);
 int reveal(int ,int, struct Board*);
 void set_board(struct Board*);
 void lose(int, int, struct Board*);
+int won(struct Board*);
 int around(int, int, int, int, struct Board*);
+
 
 #endif

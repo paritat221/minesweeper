@@ -47,8 +47,8 @@ void gen_board(int a, int b, struct Board *brd){
     for(int i=0; i<brd->nmines; i++){
         int y = rand()%brd->height;
         int x = rand()%brd->width;
+        srand(rtc_ticks());
         while(brd->board_state[y][x].value==69 || around(a,b,x,y,brd)){
-            srand(rtc_ticks());
             y = rand()%brd->height;
             x = rand()%brd->width;
         }
@@ -79,30 +79,30 @@ void draw_board(struct Board *brd){
                 if(brd->board_state[y][x].state){
                     int value = brd->board_state[y][x].value;
                     if(value==69){
-                        dsubimage(x*20+10,y*20+10,&img_bomb,0,0,20,20, DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_bomb,0,0,20,20, DIMAGE_NONE);
                     }else if(value==0){
-                        dsubimage(x*20+10,y*20+10,&img_nums,160,0,180+20,20, DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_nums,160,0,180+20,20, DIMAGE_NONE);
                     }
                     else{
                         if(x*20<width*20)
-                            dsubimage(x*20+10,y*20+10,&img_nums,(value-1)*20,0,value*20+20,20, DIMAGE_NONE);
+                            dsubimage(x*20+7,y*20+40,&img_nums,(value-1)*20,0,value*20+20,20, DIMAGE_NONE);
                     }
                 }else{
                     if(brd->board_state[y][x].flagged==1){
-                        dsubimage(x*20+10,y*20+10,&img_flag,0,0,20,20, DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_flag,0,0,20,20, DIMAGE_NONE);
                     }else{
-                        dsubimage(x*20+10,y*20+10,&img_desert_cell,0,0,20,20,DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_desert_cell,0,0,20,20,DIMAGE_NONE);
                     }
                 }
                 if(brd->board_state[y][x].flagged==1)
-                    dsubimage(x*20+10,y*20+10,&img_flag,0,0,20,20, DIMAGE_NONE);
+                    dsubimage(x*20+7,y*20+40,&img_flag,0,0,20,20, DIMAGE_NONE);
         }
     }
     
 }
 
 void draw_cursor(struct Board *brd){
-    dimage(brd->pos[0]*20+10,brd->pos[1]*20+10,&img_cursor);
+    dimage(brd->pos[0]*20+7,brd->pos[1]*20+40,&img_cursor);
 }
 
 int show_cell(int x,int y, struct Board *brd){
@@ -185,30 +185,42 @@ void lose(int a, int b, struct Board *brd){
                 if(brd->board_state[y][x].state){
                     int value = brd->board_state[y][x].value;
                     if(value==69){
-                        dsubimage(x*20+10,y*20+10,&img_bomb,0,0,20,20, DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_bomb,0,0,20,20, DIMAGE_NONE);
                     }else if(value==0){
-                        dsubimage(x*20+10,y*20+10,&img_nums,160,0,180+20,20, DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_nums,160,0,180+20,20, DIMAGE_NONE);
                     }
                     else{
                         if(x*20<width*20)
-                            dsubimage(x*20+10,y*20+10,&img_nums,(value-1)*20,0,value*20+20,20, DIMAGE_NONE);
+                            dsubimage(x*20+7,y*20+40,&img_nums,(value-1)*20,0,value*20+20,20, DIMAGE_NONE);
                     }
                 }else{
                     if(brd->board_state[y][x].flagged==1){
                         if(brd->board_state[y][x].value==69)
-                            dsubimage(x*20+10,y*20+10,&img_flag,0,0,20,20, DIMAGE_NONE);
+                            dsubimage(x*20+7,y*20+40,&img_flag,0,0,20,20, DIMAGE_NONE);
                         else
-                            dsubimage(x*20+10,y*20+10,&img_cross_bomb,0,0,20,20, DIMAGE_NONE);
+                            dsubimage(x*20+7,y*20+40,&img_cross_bomb,0,0,20,20, DIMAGE_NONE);
                     }else if(brd->board_state[y][x].value==69){
-                        dsubimage(x*20+10,y*20+10,&img_bomb,0,0,20,20, DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_bomb,0,0,20,20, DIMAGE_NONE);
                     }
                     else{
-                        dsubimage(x*20+10,y*20+10,&img_desert_cell,0,0,20,20,DIMAGE_NONE);
+                        dsubimage(x*20+7,y*20+40,&img_desert_cell,0,0,20,20,DIMAGE_NONE);
                     }
                 }
                 if(brd->board_state[y][x].flagged==1)
-                    dsubimage(x*20+10,y*20+10,&img_flag,0,0,20,20, DIMAGE_NONE);
+                    dsubimage(x*20+7,y*20+40,&img_flag,0,0,20,20, DIMAGE_NONE);
         }
     }
-    dsubimage(a*20+10,b*20+10,&img_red_bomb,0,0,20,20, DIMAGE_NONE);
+    dsubimage(a*20+7,b*20+40,&img_red_bomb,0,0,20,20, DIMAGE_NONE);
+}
+
+int won(struct Board* brd){
+    int height = brd->height;
+    int width = brd->width;
+    for(int y=0; y<height; y++){
+        for(int x=0; x<width;x++){
+            if(brd->board_state[y][x].state == 0 && brd->board_state[y][x].value != 69)
+                return 0;
+        }
+    }
+    return 1;
 }
