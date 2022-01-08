@@ -24,7 +24,7 @@ void draw_board(struct Board*);
 void draw_cursor(struct Board*);
 int show_cell(int ,int, struct Board*);
 void flag_cell(int ,int, struct Board*);
-int reveal(int ,int, struct Board*);
+int reveal(int ,int, struct Board*, int*);
 void set_board(struct Board*);
 void lose(int, int, struct Board*);
 int won(struct Board*);

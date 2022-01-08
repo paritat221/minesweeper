@@ -30,21 +30,22 @@ static int get_inputs(void)
         key_event_t ev = getkey_opt(opt, &timeout);
         if(ev.type == KEYEV_NONE) return -1;
 
-        int key = ev.key;
-        if(key == KEY_SHIFT)  
-            return KEY_SHIFT;
-        if(key == KEY_OPTN)  
-            return KEY_OPTN;
-        if(key == KEY_ALPHA)
-            return KEY_ALPHA;  
-        if(key == KEY_DOWN)  
-            return KEY_DOWN;
-        if(key == KEY_RIGHT) 
-            return KEY_RIGHT;
-        if(key == KEY_UP)    
-            return KEY_UP;
-        if(key == KEY_LEFT)  
-            return KEY_LEFT;
+        //int key = ev.key;
+        // if(key == KEY_SHIFT)  
+        //     return KEY_SHIFT;
+        // if(key == KEY_OPTN)  
+        //     return KEY_OPTN;
+        // if(key == KEY_ALPHA)
+        //     return KEY_ALPHA;  
+        // if(key == KEY_DOWN)  
+        //     return KEY_DOWN;
+        // if(key == KEY_RIGHT) 
+        //     return KEY_RIGHT;
+        // if(key == KEY_UP)    
+        //     return KEY_UP;
+        // if(key == KEY_LEFT)  
+        //     return KEY_LEFT;
+        return ev.key;
     }
 }
 
@@ -84,6 +85,10 @@ int main(void)
             f_time += 25;
             s_time = (int)(f_time/1000);
             dclear(C_WHITE);
+            int win = won(brd);
+            if(win==1){
+                trollface=2;
+            }
             draw_board(brd);
             dimage(brd->width*20+7,10,&img_bugdenial);
             draw_cursor(brd);
@@ -91,11 +96,7 @@ int main(void)
             dimage(182, 10, &img_alive);
             dupdate();
             key = get_inputs();
-            int win = won(brd);
-            if(win==1){
-                trollface=2;
-            }
-
+            
             if(key==KEY_DOWN && brd->pos[1]<brd->height-1)
                 brd->pos[1]++;
             else if(key==KEY_UP && brd->pos[1]>0)
@@ -119,11 +120,12 @@ int main(void)
                     break;
                 }
                 show_cell(brd->pos[0],brd->pos[1],brd);
-                int rvl = reveal(brd->pos[0],brd->pos[1],brd);
-                if(rvl == 1){
+                int rvl[2];
+                int rvl_state = reveal(brd->pos[0],brd->pos[1],brd,rvl);
+                if(rvl_state==1){
                     trollface = 1;
-                    trollfaced[0] = brd->pos[0];
-                    trollfaced[1] = brd->pos[1];
+                    trollfaced[0] = rvl[0];
+                    trollfaced[1] = rvl[1];
                     break;
                 }
             }

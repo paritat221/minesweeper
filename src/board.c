@@ -125,7 +125,7 @@ int show_cell(int x,int y, struct Board *brd){
     return 0;
 }
 
-int reveal(int x, int y, struct Board *brd){
+int reveal(int x, int y, struct Board *brd, int* rvl){
     int height = brd->height;
     int width = brd->width;
     int flags = 0;
@@ -143,8 +143,11 @@ int reveal(int x, int y, struct Board *brd){
                 if(z<width && v<height && z>=0 && v>=0){
                     if(brd->board_state[v][z].flagged==0){
                         brd->board_state[v][z].state=1;
-                        if(brd->board_state[v][z].value==69)
+                        if(brd->board_state[v][z].value==69){
+                            rvl[0] = z;
+                            rvl[1] = v;
                             return 1;
+                        }
                     }
                 }
             }
@@ -158,6 +161,8 @@ int reveal(int x, int y, struct Board *brd){
             }
         }
     }
+    rvl[0] = 0;
+    rvl[1] = 0;
     return 0;
 }
 
