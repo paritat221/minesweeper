@@ -5,14 +5,6 @@
 #include "board.h"
 #include "timer.h"
 
-#define SHIFT 1
-#define OPTN 2
-#define ALPHA 3
-#define DIR_UP 4
-#define DIR_DOWN 5
-#define DIR_LEFT 6
-#define DIR_RIGHT 7
-#define ENGINE_TICK 25
 
 static int callback_tick(volatile int *tick)
 {
@@ -29,22 +21,6 @@ static int get_inputs(void)
     {
         key_event_t ev = getkey_opt(opt, &timeout);
         if(ev.type == KEYEV_NONE) return -1;
-
-        //int key = ev.key;
-        // if(key == KEY_SHIFT)  
-        //     return KEY_SHIFT;
-        // if(key == KEY_OPTN)  
-        //     return KEY_OPTN;
-        // if(key == KEY_ALPHA)
-        //     return KEY_ALPHA;  
-        // if(key == KEY_DOWN)  
-        //     return KEY_DOWN;
-        // if(key == KEY_RIGHT) 
-        //     return KEY_RIGHT;
-        // if(key == KEY_UP)    
-        //     return KEY_UP;
-        // if(key == KEY_LEFT)  
-        //     return KEY_LEFT;
         return ev.key;
     }
 }
@@ -74,7 +50,7 @@ int main(void)
         int trollface = 0;
         int trollfaced[2] = {5,5};
         static volatile int tick = 1;
-        int t = timer_configure(TIMER_ANY, ENGINE_TICK*1000, GINT_CALL(callback_tick, &tick));
+        int t = timer_configure(TIMER_ANY, 25000, GINT_CALL(callback_tick, &tick));
         if(t >= 0) timer_start(t);
 
         int s_time = 0;
